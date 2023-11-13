@@ -20,12 +20,8 @@ const configRoutes = function (app) {
 
     // Routers login
     app.use('/login', loginRouter)
-
-       
     //  Auth pro resto
     app.use(authmid.authenticate)
-
-
     //Routers Consulta
     app.use('/consulta', consultaRouter);
     
@@ -46,7 +42,5 @@ const configRoutes = function (app) {
 
     app.use('/aniconsulta', aniConRouter);
 };
-
-
 
 export = configRoutes;
